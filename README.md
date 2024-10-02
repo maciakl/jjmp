@@ -6,7 +6,7 @@ Bookmarks for the CLI.
 
 ## Philosophy
 
-Imagine having a short list of bookmarks available in your CLI. You have one for your current project, one for your other current project, one for your Neovim setup, one for this thing you jave to do this week and never have to touch again, and etc. Imagine being able to jump between them with one simple command.
+Imagine having a short list of bookmarks available in your CLI. You have one for your current project, one for your other current project, one for your Neovim setup, etc. Imagine being able to jump between them with one simple command.
 
 Now imagine you only have 10 bookmark slots, so you have to be judicious as to what you bookmark, and how you maintain the list, so that it continues being useful.
 
