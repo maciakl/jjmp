@@ -51,14 +51,9 @@ Poweshell:
 function j { jjmp $args | cd }
 ```
 
-Bash:
-```bash
-function j { cd $(jjmp $@) }
-```
-
-Zsh:
+Bash & Zsh:
 ```zsh
-function j { cd $(jjmp $@) }
+function j { cd "$(jjmp $@)" }
 ```
 
 ## Usage
