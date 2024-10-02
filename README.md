@@ -2,6 +2,8 @@
 
 Bookmarks for the CLI.
 
+<img width="658" alt="j" src="https://github.com/user-attachments/assets/1762b829-1e62-4744-8fbb-e3f2ff241947">
+
 ## Philosophy
 
 Imagine having a short list of bookmarks available in your CLI. You have one for your current project, one for your other current project, one for your Neovim setup, one for this thing you jave to do this week and never have to touch again, and etc. Imagine being able to jump between them with one simple command.
