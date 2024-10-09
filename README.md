@@ -31,7 +31,11 @@ By virtue of being a go program `jjmp` is platform agnostic and does not depend 
 
 ## Installing
 
- On Windows, this tool is distributed via `scoop` (see [scoop.sh](https://scoop.sh)).
+ Install via go:
+ 
+    go install github.com/maciakl/jjmp@latest
+ 
+ On Windows, this tool is also distributed via `scoop` (see [scoop.sh](https://scoop.sh)).
 
  First, you need to add my bucket:
 
