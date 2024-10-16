@@ -54,7 +54,7 @@ Because an executable cannot change the working directory of a parent shell you 
 
 Poweshell:
 ```powershell
-function j { jjmp $args | cd }
+function j { jjmp.exe $args | cd }
 ```
 
 Bash & Zsh:
