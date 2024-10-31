@@ -28,6 +28,9 @@ This implementation had a couple of flaws:
 
 By virtue of being a go program `jjmp` is platform agnostic and does not depend on any external executables. It also uses a simpler key-value store that is unique to it and less likely to get clobbered by updates.
 
+### Why not use zoxide instead?
+
+[zoxide](https://github.com/ajeetdsouza/zoxide) is a great tool, but it has a slightly different focus. It is designed to entirely replace your `cd` command in your workflow. I just wanted a manually curated bookmark list. 
 
 ## Installing
 
