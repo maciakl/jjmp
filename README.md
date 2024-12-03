@@ -34,15 +34,27 @@ By virtue of being a go program `jjmp` is platform agnostic and does not depend 
 
 ## Installing
 
- Install via go:
+There are few different ways:
+
+### Platform Independent
+
+ Install via `go`:
  
     go install github.com/maciakl/jjmp@latest
 
-Linux one-liner to fetch and install the binary into `/usr/local/bin`:
+### Linux
 
-    wget -qN 'https://github.com/maciakl/jjmp/releases/latest/download/jjmp_lin.zip' && unzip -oq jjmp_lin.zip && rm -f jjmp_lin.zip && chmod +x jjmp && sudo mv jjmp /usr/local/bin
- 
- On Windows, this tool is also distributed via `scoop` (see [scoop.sh](https://scoop.sh)).
+On Linux (requires `wget` & `unzip`, installs to `/usr/local/bin`):
+
+    p="jjmp" && wget -qN "https://github.com/maciakl/${p}/releases/latest/download/${p}_lin.zip" && unzip -oq ${p}_lin.zip && rm -f ${p}_lin.zip && chmod +x ${p} && sudo mv ${p} /usr/local/bin
+
+To uninstall, simply delete it:
+
+    rm -f /usr/local/bin/jjmp
+
+### Windows
+
+On Windows, this tool is distributed via `scoop` (see [scoop.sh](https://scoop.sh)).
 
  First, you need to add my bucket:
 
@@ -71,9 +83,10 @@ function j { cd "$(jjmp $@)" }
 
 ## Usage
 
-Onc you wrapped the `jjmp` command in a shell function `j` you can use it like this:
+Once you wrapped the `jjmp` command in a shell function `j` you can use it like this:
 
-- `j` - will list all bookmarks
+- `j` - display a TUI listing all bookmarks and prompting for selection
+- <kbd>Ctrl</kbd>+<kbd>C</kbd> - quit the TUI without making a selection
 - `j <0-9>` - will change the working directory to the bookmarked path
 - `j set <0-9>` - will bookmark the current working directory
 - `j delete <0-9>` - will delete the chosen bookmark
