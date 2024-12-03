@@ -37,6 +37,10 @@ By virtue of being a go program `jjmp` is platform agnostic and does not depend 
  Install via go:
  
     go install github.com/maciakl/jjmp@latest
+
+Linux one-liner to fetch and install the binary into `/usr/local/bin`:
+
+    wget -qN 'https://github.com/maciakl/jjmp/releases/latest/download/jjmp_lin.zip' && unzip -oq jjmp_lin.zip && rm -f jjmp_lin.zip && chmod +x jjmp && sudo mv jjmp /usr/local/bin
  
  On Windows, this tool is also distributed via `scoop` (see [scoop.sh](https://scoop.sh)).
 
